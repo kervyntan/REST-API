@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is my Node Test File</title>
+</head>
+<body>
+    <!-- includes a partial/html section into the file -->
+    <%- include('./nav.ejs') %> 
+
+
+    <% const name = 'mario' %>
+    <h1> Home</h1>
+    <h2> Your path to becoming a Node.js ninja!</h2>
+    <p> <%= title %></p>
+
+    <% if (blogs.length > 0) { %>
+        <% blogs.forEach( (item, index) => { %>
+            <h3> <%= item.title %></h3>
+            <p> <%= item.snippet %></p>
+        <% }) %>
+    <% } else { %>
+        <p> There are no blogs to display </p>
+        <% } %>
+    <form>
+        <label for="title"> Blog title :</label>
+        <input type="text" id="title" required>
+        <label for="snippet">Snippet : </label>
+        <input type="snippet" id="snippet" required>
+        <label for="content"> Blog Content: </label>
+        <input type="textarea" id="textarea" required>
+
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "title": "Personal Page",
+      "skills": [
+        { "skill": "react", "path": "../assets/react-icon.png" },
+        { "skill": "CSS", "path": "../assets/css.png" },
+        { "skill": "HTML", "path": "../assets/html5.png" },
+        { "skill": "JS", "path": "../assets/js.png" }
+      ],
+      "content": "Personal Page done by Kervyn"
+    },
+  
+    {
+      "id": 2,
+      "title": "Wordle Clone React",
+      "skills": [{ "skill": "react", "path": "../assets/react-icon.png" }],
+      "content": "Clone of Wordle done completely in React"
+    }
+  ]
+  
