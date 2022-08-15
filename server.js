@@ -1,5 +1,6 @@
 const http = require('http');
 const fs = require('fs');
+const express = require('express');
 
 
 const server = http.createServer((req, res) => {
@@ -49,3 +50,12 @@ const server = http.createServer((req, res) => {
 server.listen(3000, 'localhost' /* hostname */, () => {
     console.log('listening for requests on port 3000')
 })
+
+// const app = express();
+// app.listen(3000);
+// console.log("welcome")
+
+// app.get(':url/users/info?nonce=:nonce&ts=:ts&accountid=:accountid', (req, res) => {
+//     res.sendFile('./views/index.html', { root : __dirname });
+//     console.log("Success");
+// })
